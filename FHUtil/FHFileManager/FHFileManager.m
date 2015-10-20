@@ -247,6 +247,9 @@
         NSLog(@"归档失败！你访问的文件不存在, file path = %@",[rootPath stringByAppendingPathComponent:fileName]);
         return;
     }
+    if (![FHFileManager isExisitFileGroupAtPath:rootPath]) {
+        [FHFileManager createFileGroupAtPath:rootPath];
+    }
     rootPath = [rootPath stringByAppendingPathComponent:fileName];
     NSMutableData *mData = [NSMutableData new];
     NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc]initForWritingWithMutableData:mData];
