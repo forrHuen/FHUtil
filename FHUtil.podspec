@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "FHUtil"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "A helper util  used on iOS."
   s.description      = <<-DESC
                        It is a helper util  used on iOS, which implement by Objective-C.
