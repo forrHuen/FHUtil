@@ -100,7 +100,7 @@
  *
  *  @param rootPath        文件夹路径，必要是根目录的路径
  *  @param fileName        文件名称,不可以为nil
- *  @param object          可以是model，也可装有model数组、字典
+ *  @param object          写入的内容，可以是model，也可装有model数组、字典
  *  @param encodeObjectKey 编码key
  */
 + (void)archiverAtPath:(NSString *)rootPath
